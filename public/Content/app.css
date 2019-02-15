@@ -7,5 +7,6 @@ p.content {
 }
 
 body {
-  background-image: url("./public/Assets/images/backgroung.jpeg");
+  /*background-image: url("../Assets/images/background.jpeg");
+  background-repeat: no-repeat;*/
 }
