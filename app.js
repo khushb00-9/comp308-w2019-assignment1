@@ -20,10 +20,6 @@ let logger = require("morgan");
 // route setup
 let indexRouter = require("./routes/index");
 //let contactRouter = require("./routes/contact");
-//let homeRouter = require("./routes/home");
-//let projecttRouter = require("./routes/project");
-//let serviceRouter = require("./routes/service");
-//let aboutRouter = require("./routes/about");
 
 let app = express();
 
@@ -40,10 +36,6 @@ app.use(express.static(path.join(__dirname, "node_modules")));
 
 app.use("/", indexRouter);
 //app.use("/contact-list", contactRouter);
-//app.use("/contact-list", homeRouter);
-//app.use("/contact-list", projecttRouter);
-//app.use("/contact-list", serviceRouter);
-//app.use("/contact-list", aboutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
